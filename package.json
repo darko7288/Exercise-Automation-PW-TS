@@ -5,17 +5,13 @@
   "main": "index.js",
   "scripts": {
 	"Headless/UI/All": "npx playwright test",
-	"Headless/UI/Login": "npx playwright test Tests_UI/Login.spec.ts",
-	"Headless/UI/Signup": "npx playwright test Tests_UI/Signup.spec.ts",
+	"Headless/UI/Access": "npx playwright test Tests_UI/Access.spec.ts",
 	"Chromium/UI/All": "npx playwright test --headed --browser=chromium",
-	"Chromium/UI/Login": "npx playwright test --headed --browser=chromium Tests_UI/Login.spec.ts",
-	"Chromium/UI/Signup": "npx playwright test --headed --browser=chromium Tests_UI/Signup.spec.ts",
+	"Chromium/UI/Access": "npx playwright test --headed --browser=chromium Tests_UI/Access.spec.ts",
 	"Firefox/UI/All": "npx playwright test --headed --browser=firefox",
-	"Firefox/UI/Login": "npx playwright test --headed --browser=firefox Tests_UI/Login.spec.ts",
-	"Firefox/UI/Signup": "npx playwright test --headed --browser=firefox Tests_UI/Signup.spec.ts",
+	"Firefox/UI/Access": "npx playwright test --headed --browser=firefox Tests_UI/Access.spec.ts",
 	"Webkit/UI/All": "npx playwright test --headed --browser=webkit",
-	"Webkit/UI/Login": "npx playwright test --headed --browser=webkit Tests_UI/Login.spec.ts",
-	"Webkit/UI/Signup": "npx playwright test --headed --browser=webkit Tests_UI/Signup.spec.ts"
+	"Webkit/UI/Access": "npx playwright test --headed --browser=webkit Tests_UI/Access.spec.ts"
   },
   "repository": {
     "type": "git",
