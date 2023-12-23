@@ -1,0 +1,38 @@
+{
+  "name": "ts-playwright-automation",
+  "version": "1.0.0",
+  "description": "Automated Software Testing with Playwright and TypeScript",
+  "main": "index.js",
+  "scripts": {
+	"Headless/UI/All": "npx playwright test",
+	"Headless/UI/Login": "npx playwright test Tests_UI/Login.spec.ts",
+	"Headless/UI/Signup": "npx playwright test Tests_UI/Signup.spec.ts",
+	"Chromium/UI/All": "npx playwright test --headed --browser=chromium",
+	"Chromium/UI/Login": "npx playwright test --headed --browser=chromium Tests_UI/Login.spec.ts",
+	"Chromium/UI/Signup": "npx playwright test --headed --browser=chromium Tests_UI/Signup.spec.ts",
+	"Firefox/UI/All": "npx playwright test --headed --browser=firefox",
+	"Firefox/UI/Login": "npx playwright test --headed --browser=firefox Tests_UI/Login.spec.ts",
+	"Firefox/UI/Signup": "npx playwright test --headed --browser=firefox Tests_UI/Signup.spec.ts",
+	"Webkit/UI/All": "npx playwright test --headed --browser=webkit",
+	"Webkit/UI/Login": "npx playwright test --headed --browser=webkit Tests_UI/Login.spec.ts",
+	"Webkit/UI/Signup": "npx playwright test --headed --browser=webkit Tests_UI/Signup.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TS-Playwright-Automation"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.5.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.40.1"
+  }
+}
