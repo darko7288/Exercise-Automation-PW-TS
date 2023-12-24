@@ -2,7 +2,7 @@ import { test } from "@playwright/test";
 import { AccessPage } from "../UI/Pages/AccessPage";
 import * as constants from "../UI/Constants";
 
-test.describe.only("New user registration.", () =>
+test.describe.only("Signup functionality.", () =>
 {
 	let accessPage: AccessPage;
 
@@ -30,7 +30,7 @@ test.describe.only("New user registration.", () =>
 	});
 });
 
-test.describe("Existing user login.", async() =>
+test.describe("Login functionality.", async() =>
 {
 	let accessPage: AccessPage;
 
@@ -51,17 +51,31 @@ test.describe("Existing user login.", async() =>
 
 	test("Login User with invalid email.", async() =>
 	{
+		await accessPage.checkContent();
+		await accessPage.inputLoginEmail(constants.invalidEmail);
+		await accessPage.inputLoginPassword(constants.password);
+		await accessPage.login();
 	});
 
 	test("Login User with incorrect email.", async() =>
 	{
+		await accessPage.checkContent();
+		await accessPage.inputLoginEmail(constants.incorrectEmail);
+		await accessPage.inputLoginPassword(constants.password);
+		await accessPage.login();
 	});
 
 	test("Login User with incorrect password.", async() =>
 	{
+		await accessPage.checkContent();
+		await accessPage.inputLoginEmail(constants.email);
+		await accessPage.inputLoginPassword(constants.incorrectPassword);
+		await accessPage.login();
 	});
 
 	test("Login User without credential input.", async() =>
 	{
+		await accessPage.checkContent();
+		await accessPage.login();
 	});
 });
