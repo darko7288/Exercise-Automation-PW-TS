@@ -55,6 +55,7 @@ export class AccessPage extends AbstractPage
 		await expect(this.loginPasswordInput).toBeVisible();
 		expect(await this.loginPasswordInput.getAttribute("placeholder")).toBe(constants.loginPasswordInputPlaceholder);
 		await expect(this.loginButton).toBeVisible();
+		await expect(this.loginButton).toBeEnabled();
 		await expect(this.loginButton).toHaveText(constants.loginButtonText);
 
 		await expect(this.signupBanner).toHaveText(constants.signupBannerText);
@@ -63,6 +64,7 @@ export class AccessPage extends AbstractPage
 		await expect(this.signupEmailInput).toBeVisible();
 		expect(await this.signupEmailInput.getAttribute("placeholder")).toBe(constants.signupEmailInputPlaceholder);
 		await expect(this.signupButton).toBeVisible();
+		await expect(this.signupButton).toBeEnabled();
 		await expect(this.signupButton).toHaveText(constants.signupButtonText);
 
 		await expect(this.separator).toHaveText(constants.separatorText);
@@ -78,22 +80,22 @@ export class AccessPage extends AbstractPage
 		await this.signupButton.click();
 	}
 
-	async inputLoginEmail(email: string)
+	async provideLoginEmail(email: string)
 	{
 		await this.loginEmailInput.fill(email);
 	}
 
-	async inputLoginPassword(password: string)
+	async provideLoginPassword(password: string)
 	{
 		await this.loginPasswordInput.fill(password);
 	}
 
-	async inputSignupName(name: string)
+	async provideSignupName(name: string)
 	{
 		await this.signupNameInput.fill(name);
 	}
 
-	async inputSignupEmail(email: string)
+	async provideSignupEmail(email: string)
 	{
 		await this.signupEmailInput.fill(email);
 	}

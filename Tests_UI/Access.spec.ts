@@ -16,16 +16,16 @@ test.describe.only("Signup functionality.", () =>
 	test("Registration with valid credentials.", async() =>
 	{
 		await accessPage.checkContent();
-		await accessPage.inputSignupName(constants.name);
-		await accessPage.inputSignupEmail(constants.email);
+		await accessPage.provideSignupName(constants.name);
+		await accessPage.provideSignupEmail(constants.email);
 		await accessPage.signup();
 	});
 
 	test("Registration attempt with invalid email.", async() =>
 	{
 		await accessPage.checkContent();
-		await accessPage.inputSignupName(constants.name);
-		await accessPage.inputSignupEmail(constants.invalidEmail);
+		await accessPage.provideSignupName(constants.name);
+		await accessPage.provideSignupEmail(constants.invalidEmail);
 		await accessPage.signup();
 	});
 });
@@ -44,32 +44,32 @@ test.describe("Login functionality.", async() =>
 	test("Login User with valid credentials.", async() =>
 	{
 		await accessPage.checkContent();
-		await accessPage.inputLoginEmail(constants.email);
-		await accessPage.inputLoginPassword(constants.password);
+		await accessPage.provideLoginEmail(constants.email);
+		await accessPage.provideLoginPassword(constants.password);
 		await accessPage.login();
 	});
 
 	test("Login User with invalid email.", async() =>
 	{
 		await accessPage.checkContent();
-		await accessPage.inputLoginEmail(constants.invalidEmail);
-		await accessPage.inputLoginPassword(constants.password);
+		await accessPage.provideLoginEmail(constants.invalidEmail);
+		await accessPage.provideLoginPassword(constants.password);
 		await accessPage.login();
 	});
 
 	test("Login User with incorrect email.", async() =>
 	{
 		await accessPage.checkContent();
-		await accessPage.inputLoginEmail(constants.incorrectEmail);
-		await accessPage.inputLoginPassword(constants.password);
+		await accessPage.provideLoginEmail(constants.incorrectEmail);
+		await accessPage.provideLoginPassword(constants.password);
 		await accessPage.login();
 	});
 
 	test("Login User with incorrect password.", async() =>
 	{
 		await accessPage.checkContent();
-		await accessPage.inputLoginEmail(constants.email);
-		await accessPage.inputLoginPassword(constants.incorrectPassword);
+		await accessPage.provideLoginEmail(constants.email);
+		await accessPage.provideLoginPassword(constants.incorrectPassword);
 		await accessPage.login();
 	});
 

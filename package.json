@@ -7,11 +7,7 @@
 	"Headless/UI/All": "npx playwright test",
 	"Headless/UI/Access": "npx playwright test Tests_UI/Access.spec.ts",
 	"Chromium/UI/All": "npx playwright test --headed --browser=chromium",
-	"Chromium/UI/Access": "npx playwright test --headed --browser=chromium Tests_UI/Access.spec.ts",
-	"Firefox/UI/All": "npx playwright test --headed --browser=firefox",
-	"Firefox/UI/Access": "npx playwright test --headed --browser=firefox Tests_UI/Access.spec.ts",
-	"Webkit/UI/All": "npx playwright test --headed --browser=webkit",
-	"Webkit/UI/Access": "npx playwright test --headed --browser=webkit Tests_UI/Access.spec.ts"
+	"Chromium/UI/Access": "npx playwright test --headed --browser=chromium Tests_UI/Access.spec.ts"
   },
   "repository": {
     "type": "git",

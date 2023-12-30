@@ -21,6 +21,10 @@ export const accessPageURL = "https://automationexercise.com/login";
 export const homePageTitle = "Automation Exercise";
 export const homePageURL = "https://automationexercise.com";
 
+export const signupPageTitle = "Automation Exercise - Signup";
+export const signupPageURL = "https://automationexercise.com/signup";
+
+
 /*************************************************/
 /*                 Access Page                   */
 /*********************************************** */
@@ -46,3 +50,40 @@ export const productsButtonText = " Products";
 export const cartButtonText = " Products";
 export const signupLoginButtonText = " Signup / Login";
 export const contactButtonText = " Contact us";
+
+/*************************************************/
+/*                Signup Page                    */
+/*********************************************** */
+
+export const accountInformationBannerText = "Enter Account Information";
+export const titleLabelText = "Title";
+export const title1stOptionLabelText = " Mr. ";
+export const title2ndOptionLabelText = " Mrs. ";
+export const nameLabelText = "Name ";
+export const emailLabelText = "Email ";
+export const passwordLabelText = "Password ";
+export const dateOfBirthLabelText = "Date of Birth";
+export const addressInformationBannerText = "Address Information";
+export const firstNameLabelText = "First Name ";
+export const lastNameLabelText = "Last Name ";
+export const companyLabelText = "Company ";
+export const addressLabelText = "Address ";
+export const address2LabelText = "Address 2";
+export const countryLabelText = "Country ";
+export const stateLabelText = "State ";
+export const cityLabelText = "City ";
+export const zipcodeLabelText = "Zipcode ";
+export const mobileNumberLabelText = "Mobile Number "; 
+export const createAccountButtonText = "Create Account";
+
+export const day = "Day";
+export const month = "Month";
+export const year = "Year";
+
+export const india = "India";
+export const usa = "United States";
+export const canada = "Canada";
+export const australia = "Australia";
+export const israel = "Israel";
+export const newZealand = "New Zealand";
+export const singapore = "Singapore";
