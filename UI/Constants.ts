@@ -18,6 +18,9 @@ export const incorrectPassword = "728";
 export const accessPageTitle = "Automation Exercise - Signup / Login";
 export const accessPageURL = "https://automationexercise.com/login";
 
+export const homePageTitle = "Automation Exercise";
+export const homePageURL = "https://automationexercise.com";
+
 /*************************************************/
 /*                 Access Page                   */
 /*********************************************** */
@@ -34,3 +37,12 @@ export const signupButtonText = "Signup";
 
 export const separatorText = "OR";
 
+/*************************************************/
+/*                  Home Page                    */
+/*********************************************** */
+
+export const homeButtonText = " Home";
+export const productsButtonText = " Products";
+export const cartButtonText = " Products";
+export const signupLoginButtonText = " Signup / Login";
+export const contactButtonText = " Contact us";

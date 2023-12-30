@@ -1,9 +1,9 @@
 import { expect, Locator, Page } from "@playwright/test";
+import { AbstractPage } from "./Page";
 import * as constants from "../Constants";
 
-export class AccessPage
+export class AccessPage extends AbstractPage
 {
-	readonly page: Page;
 	readonly loginBox: Locator;
 	readonly loginBanner: Locator;
 	readonly loginEmailInput: Locator;
@@ -18,7 +18,7 @@ export class AccessPage
 
 	constructor(page: Page)
 	{
-		this.page = page;
+		super(page);
 		this.loginBox = page.locator(".login-form");
 		this.loginBanner = page.getByText("Login to your account");
 		this.loginEmailInput = page.getByTestId("login-email");
