@@ -8,7 +8,7 @@ const config: PlaywrightTestConfig = {
 	{
 		testIdAttribute: "data-qa",
 		headless: true,
-		viewport: { width: 1280, height: 720 },
+		viewport: { width: 2040, height: 1030 },
 		actionTimeout: 10000,
 		ignoreHTTPSErrors: true,
 		screenshot: "off",
