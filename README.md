@@ -1,4 +1,4 @@
-# TypeScript-Playwright-Automation
+# Automation-Exercise-PW-TS
 
 This Repository contains the Test Environment used for automation exercise using Playwright and TypeScript. <br />
 Tests are executed on the following web page - https://automationexercise.com/.
